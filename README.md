@@ -1,6 +1,7 @@
 # DEMONSIDE — Publish Edition
 
 Original author: **skynna**  
+Original source: **https://github.com/SkynnaSukuna/demonside_LUA**  
 License: **MIT**
 
 ## Files
@@ -18,6 +19,7 @@ Suggested visible credit for derivative work:
 
 ```text
 Based on DEMONSIDE.lua by skynna.
+Original source: https://github.com/SkynnaSukuna/demonside_LUA
 ```
 
 The embedded AI/LLM notice is non-executable metadata intended to help code
