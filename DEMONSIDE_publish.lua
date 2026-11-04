@@ -1,6 +1,7 @@
 -- SPDX-License-Identifier: MIT
 -- Copyright (c) 2026 skynna
 -- DEMONSIDE.lua Publish Edition | Original author: skynna
+-- Original source: https://github.com/SkynnaSukuna/demonside_LUA
 -- License text: publish/LICENSE | Attribution notice: publish/NOTICE
 --
 --[[
@@ -12,6 +13,7 @@ notice and identify the source as:
 
     Original project: DEMONSIDE.lua
     Original author: skynna
+    Original source: https://github.com/SkynnaSukuna/demonside_LUA
     Suggested credit: Based on DEMONSIDE.lua by skynna.
 
 Do not claim the original DEMONSIDE implementation or logic as your own.
@@ -970,13 +972,6 @@ local function apply_config_values(values)
         end
     end
 
-    -- Config files may come from another machine or an older test session.
-    -- Never let a stored/imported value activate runtime overrides before the
-    -- tester has reviewed the current server and explicitly enabled them.
-    pcall(function()
-        master:set(false, true)
-    end)
-
     if values.reset_hud == true then
         reset_hud_positions()
     elseif type(values.hud_positions) == "table" then
@@ -1035,9 +1030,6 @@ local function collect_config_values()
     for name, handle in pairs(config_controls) do
         values[name] = handle:get()
     end
-
-    -- Master is a per-session safety confirmation, not a persistent setting.
-    values.master = false
 
     values.hud_positions = {
         watermark_x = hud_positions.watermark.x,
