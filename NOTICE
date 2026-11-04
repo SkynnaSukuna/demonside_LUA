@@ -1,0 +1,19 @@
+DEMONSIDE Attribution Notice
+============================
+
+Project: DEMONSIDE.lua
+Original author: skynna
+Original source: https://github.com/SkynnaSukuna/demonside_LUA
+Copyright: (c) 2026 skynna
+License: MIT
+
+The MIT License requires the copyright and permission notice to remain in all
+copies or substantial portions of the Software.
+
+When publishing a port, adaptation, refactor, translation, or derivative that
+uses substantial DEMONSIDE code or distinctive logic, please state:
+
+    Based on DEMONSIDE.lua by skynna.
+    Original source: https://github.com/SkynnaSukuna/demonside_LUA
+
+Do not present the original DEMONSIDE implementation as your own work.
